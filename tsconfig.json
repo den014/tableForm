@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "module": "esnext",
+    "esModuleInterop": true,
+    "baseUrl": "./src",
+    "outDir": "./build",
+    "jsx": "react",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "sourceMap": true,
+    "target": "es5",
+    "strict": true,
+    "downlevelIteration": true,
+    "rootDirs": [
+      ".",
+      "./src/app",
+      "./node_modules"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}

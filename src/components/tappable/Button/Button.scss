@@ -1,0 +1,84 @@
+@import "./src/assets/style/mixins.scss";
+@import "./src/assets/style/variables.scss";
+
+.button {
+  padding: 0 $s-md;
+  border: none;
+  color: $c-light;
+  transition: color .3s, background-color .3s;
+  cursor: pointer;
+
+  &.variant {
+    &-basic {
+      border-radius: $br-default;
+      &.color {
+        &-primary {
+          background-color: $c-primary;
+        }
+        &-warning {
+          background-color: $c-danger;
+        }
+        &-light {
+          background-color: $c-light;
+        }
+      }
+      &:disabled {
+        color: $c-textAlfa;
+        background-color: $c-disabled;
+        cursor: default;
+      }
+    }
+
+    &-link {
+      background-color: transparent;
+      text-decoration: underline;
+      &.color {
+        &-primary {
+          color: $c-primary;
+        }
+        &-warning {
+          color: $c-danger;
+        }
+        &-light {
+          color: $c-light;
+        }
+      }
+      &:disabled {
+        color: $c-textAlfa;
+        cursor: default;
+      }
+    }
+
+    &-transparent {
+      background-color: transparent;
+      &.color {
+        &-primary {
+          color: $c-primary;
+        }
+        &-warning {
+          color: $c-danger;
+        }
+        &-light {
+          color: $c-light;
+        }
+      }
+      &:disabled {
+        color: $c-textAlfa;
+        cursor: default;
+      }
+    }
+  }
+
+  &.size {
+    &-md {
+      height: $h-field;
+      font-size: $fs-md;
+      font-weight: $fw-bold;
+    }
+
+    &-sm {
+      height: $h-field-sm;
+      font-size: $fs-default;
+    }
+  }
+}

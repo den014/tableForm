@@ -1,0 +1,36 @@
+@import "./src/assets/style/mixins.scss";
+@import "./src/assets/style/variables.scss";
+
+.dashboard-form {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: $c-light;
+  padding: $s-lg $s-md;
+  border-radius: $br-default;
+  box-shadow: 0 .3rem .5rem 0 rgba(0, 0, 0, .2);
+  max-width: 28rem;
+
+  @media (min-width: 768px) {
+    &:not(.vertical) {
+      max-width: 53.8rem;
+    }
+  }
+
+  &_fields {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: $s-md;
+
+    .field {
+      width: 100%;
+      max-width: 24.5rem;
+    }
+  }
+
+  &_submit {
+    width: 100%;
+    max-width: 24.5rem;
+  }
+}

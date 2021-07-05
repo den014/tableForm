@@ -1,0 +1,49 @@
+@import "./src/assets/style/mixins.scss";
+@import "./src/assets/style/variables.scss";
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .7);
+  z-index: 0;
+}
+
+.dialog {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 51rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: $br-default;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 .3rem .5rem 0 rgba(0, 0, 0, .2);
+
+  &-header {
+    width: 100%;
+    height: $h-field;
+    padding: 0 $s-sm;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $c-dark;
+    color: $c-light;
+
+    &_title {
+      font-size: $fs-default;
+      font-weight: $fw-light;
+    }
+  }
+
+  &-content {
+    padding: $s-md $s-sm;
+    background-color: $c-light;
+  }
+}
+

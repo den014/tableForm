@@ -1,0 +1,14 @@
+@import "./src/assets/style/mixins.scss";
+@import "./src/assets/style/variables.scss";
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

@@ -1,0 +1,26 @@
+@import "src/assets/style/mixins";
+@import "src/assets/style/variables";
+
+.input {
+  width: 100%;
+  height: $h-field;
+  padding: 0 $s-md;
+  border: solid 0.1rem $c-border;
+  border-radius: $br-default;
+  transition: color .3s, background-color .3s;
+
+  &::placeholder {
+    transition: opacity .3s;
+  }
+
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+
+  &:read-only {
+    color: $c-textAlfa;
+    background-color: $c-readonly;
+  }
+}

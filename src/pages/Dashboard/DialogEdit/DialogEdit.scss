@@ -1,0 +1,32 @@
+@import "./src/assets/style/mixins.scss";
+@import "./src/assets/style/variables.scss";
+
+.dialog-edit {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $bp-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: $s-md;
+  }
+
+  &_field {
+    width: 100%;
+
+    @media (min-width: $bp-tablet) {
+      max-width: 15.3rem;
+    }
+  }
+
+  &_submit {
+    width: 100%;
+    margin-top: $s-md;
+
+    @media (min-width: $bp-tablet) {
+      margin-top: 0;
+      max-width: 31.6rem;
+    }
+  }
+}

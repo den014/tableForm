@@ -1,0 +1,10 @@
+@import "./src/assets/style/mixins.scss";
+@import "./src/assets/style/variables.scss";
+
+.dashboard-forms {
+  margin-top: $s-lg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: $s-md;
+}
