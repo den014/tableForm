@@ -66,6 +66,7 @@ const DialogEdit: React.FC = () => {
 
   const handleClose = (): void => {
     if (editQuery) {
+      setAgree(false)
       urlParams.delete('edit')
       history.replace({
         search: urlParams.toString(),
